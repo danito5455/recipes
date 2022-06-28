@@ -1,0 +1,106 @@
+/* universal*/
+* { 
+    color: purple;
+}
+/* selector*/
+div {
+    color: white;
+}
+
+/* .class selectorsS */
+.name {
+    color:red;
+}
+
+/*id selectors <div id="title">*/
+#title {
+    background-color: rebeccapurple;
+}
+
+/*Grouping selectors*/
+.read,
+.unread {
+    color:white;
+    background-color: black;
+}
+
+.read {
+    /* several unique declarations */
+  }
+  
+.unread {
+    /* several unique declarations */
+  }
+
+  /*chaining selectors*/
+.name.name2 {
+    color:red;
+}
+
+/*chain class and id*/
+.name#name2 {
+    color:red;
+}
+
+/*descendant combinators
+
+<div class="ancestor"> <!-- A -->
+  <div class="contents"> <!-- B -->
+    <div class="contents"> <!-- C -->
+    </div>
+  </div>
+</div>
+
+<div class="contents"></div> <!-- D -->
+
+will only get content if nested in ancestor*/
+.ancestor .contents {
+    /* some declarations */
+  }
+
+  /*color*/
+  p {
+    /* hex example: */
+    color: #1100ff;
+    /* rgb example: */
+    color: rgb(100, 0, 127);
+    /* hsl example: */
+    color: hsl(15, 82%, 56%);
+  }
+
+  /* Typography Basics and text-align*/
+  p {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+    font-weight: 100;
+    text-align: center;
+  }
+
+  /*Image Height and Width*/
+  img {
+    height: auto;
+    width: 500px;
+  }
+  /* adding css to html externally
+  <head>
+  <link rel="stylesheet" href="styles.css">
+</head> */
+/* internal css
+<head>
+  <style>
+    div {
+      color: white;
+      background-color: black;
+    }
+
+    p {
+      color: red;
+    }
+  </style>
+</head>
+<body>...</body>*/
+
+/*inline CSS
+<body>
+  <div style="color: white; background-color: black;">...</div>
+</body> */
